@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blessing Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    *{box-sizing: border-box;}
+.myHeader a{
+    text-decoration: none;
+    color: white;
+    padding:25px 80px;
+    display:inline-block;
+}
+.myHeader{
+    background-color:black;
+    text-align: center;
+    line-height: 10px;
+}
+.myHeader :hover{
+    background-color: lightgray;
+
+}
+@media(max-width:750px){
+    .myHeader a{
+        display: block;
+        padding: 15px 10px;
+    }
+}
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+      gap: 30px;
+      padding: 20px;
+      max-width: 100%;
+    }
+
+    .blog-post {
+      background: #fff;
+      border: 1px solid white;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-post:hover {
+      border: 1.5px solid black;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-post .content {
+      padding: 15px;
+    }
+
+    .blog-post .content h2 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .blog-post .content p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="myHeader">
+    <a href="#Home">Home</a>
+    <a href="#About">About</a>
+    <a href="#Contact">Contact</a>
+    <a href="Others">Others</a>
+</div>
+  <h1>Blessing Blog</h1>
+
+  <div class="blog-container">
+    <div class="blog-post">
+      <img src="big/america.jpg" alt="Blog Post 1">
+      <div class="content">
+        <h2>Welcome to America</h2>
+        <p>A dream country</p>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="big/paris.jpg" alt="Blog Post 2">
+      <div class="content">
+        <h2>Welcome to Paris</h2>
+        <p>You can enjoy the warm environment</p>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="big/edsheeran.png" alt="Blog Post 3">
+      <div class="content">
+        <h2>Edsheeran</h2>
+        <p>Fall in love with music</p>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="big/justin.jpg" alt="Blog Post 4">
+      <div class="content">
+        <h2>Justin Bieber</h2>
+        <p>Enjoy the style</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
